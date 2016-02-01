@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      ADS-B Collision Avoid     Team 18 Description
+      Date:				1/31/2016  
+
+      Filename:         desc.html
+   -->
+
+      <meta charset="UTF-8" />
+	  <meta name="description" content="Index page"/>
+	  <meta name="keywords" content=""/>
+          
+      <title>ADS-B CAS</title>
+      <script src="modernizr-1.5.js"></script>
+	  <script src="javascripts.js"></script>
+      <link href="layout.css" rel="stylesheet" type="text/css" />
+          <style type="text/css">
+		/* Section Styles */
+		section
+		{
+                    width: 93%;
+                    border: 1px solid black;
+                    background-color: rgba(255,255,255,0.5);
+		}
+                section p 
+                {
+                    width: 90%;
+                    font-size: 1em;
+                    margin-left: 10px;
+                }
+          </style>
+   </head>
+
+   <body>
+
+	<!-- Logomap definition -->
+      <header>
+         <img src="title.jpg" alt="Page Title" usemap="#logomap" />
+		 <map name="logomap"> 
+			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
+			 <area shape="rect" coords="405,195,585,250" href="desc.html" alt="Description" />	 
+			 <area shape="rect" coords="610,195,775,250" href="res.html" alt="Resources" />
+                         <area shape="rect" coords="795,195,910,250" href="team.html" alt="Resources" />
+		 </map>
+      </header> 
+
+	<!-- Navigation List -->
+	  <nav>
+	  <ul>
+		<li><a href="index.html">Abstract</a></li>
+		<li><a href="desc.html">Description</a></li>
+		<li><a href="res.html">Resources</a></li>
+		<li><a href="team.html">Development Team</a></li>
+		
+	  </ul>
+	  </nav>
+
+      <section>
+		 <br/>
+                 <p><font size = 4><b>ADS-B Drone Collision Avoidance System</b></font></p>
+                 <p>&mdash; <b> Project Description </b> &mdash;</p>
+		 <p>
+                     
+                 The project being proposed by Group 18 in conjunction with Nevada Dynamics (ND) is to take the web based 
+                 drone ground control system ND has in place and integrate a collision avoidance module for interaction 
+                 with aircraft in the surrounding area that transmit ADS-B signals. 
+                 <br/><br/>
+                 <b><u>Design</u></b><br/>
+                 The project’s first stage is to develop
+                 a software package that can interface with an antenna placed on the drones, gather the ADS-B signals, 
+                 and filter out the useless or corrupted signals. The program will gather the signals coming in, filter out 
+                 unusable signals, and update a JSON formatted file for parsing every few seconds. 
+                 <br/><br/>
+                 Secondly, an algorithm would be 
+                 developed with polar math, to use the position, heading, and speed of both the aircraft and the drone and detect 
+                 whether a collision or near miss is going to happen. Specifically, polar math will be used on 
+                 these data points to determine a circular path around the globe that each object is on at the current time. 
+                 If the intersection is close enough, the drone will be stopped by using ND’s API. 
+     
+                 Once the signal gathering and collision avoidance model are finished, they will be made available for drones using 
+                 Nevada Dynamics’ ground control platform. 
+                 <br/><br/>
+                 <b><u>Target Audience</u></b><br/>
+                 The main users will be drone owners and operators that take advantage 
+                 of ND’s platform, which will be most useful for survey and delivery drones flying at decently high altitude. 
+                 Since the project will be integrated into the drone ground control system, that platform’s usability is the important 
+                 factor, and it is being designed in a very user-friendly fashion with a well made graphical user interface as well 
+                 as some abstraction in the drone controls for reduced confusion with new drone users.
+                 <br/><br/>
+                 <b><u>Operating Platform</u></b><br/>
+                 The project will be written in Python, on a Linux platform to start with, and possibly be written for Android in Java. 
+                 Since this project is being written on an embedded system, memory and processor management will be key in the optimization
+                 of the algorithm.<br/>
+		 </p>
+		 <br/>
+         
+		 <br/>
+		 
+      </section>
+
+   </body>
+
+</html>

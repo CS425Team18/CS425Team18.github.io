@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <!--
+      ADS-B Collision Avoid     Resources
+      Date:			1/31/2016  
+
+      Filename:         res.html
+          -->
+	  <meta charset="UTF-8" />
+	  <meta name="description" content="Project Resources"/>
+	  <meta name="keywords" content=""/>
+          
+      <title>Resources</title>
+      <script src="modernizr-1.5.js"></script>
+      <link href="layout.css" rel="stylesheet" type="text/css" />
+	  <style type="text/css">
+		/* Vertical Navigation List Styles */
+		nav#vertical 
+		{
+		   clear: left;
+		   float: left;
+		   margin-left: 10px;
+		   margin-top: 30px;
+
+		   background-color:	hsl(212,95%,90%);
+
+		   border: 1px solid black;
+		   -o-border-radius: 15px;
+		   -moz-border-radius: 15px;
+		   -webkit-border-radius: 15px;
+		   border-radius: 15px;
+		   
+		   
+		   width: 28%;
+		}
+		
+		nav#vertical ol
+		{
+			list-style-type:	upper-roman;
+			line-height:		40px;
+		}
+		
+		nav#vertical ol li a
+		{
+			text-decoration: none;
+			color: red;
+		}
+
+		nav#vertical ol li a:hover
+		{
+			text-decoration: underline;
+			color: black;
+		}
+
+		/* Section Styles */
+		section
+		{
+			margin-left: 30px;
+			margin-top: 30px;
+			width: 60%;
+
+			border: 1px solid black;
+			-o-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    -webkit-border-radius: 5px;
+		    border-radius: 5px;
+
+			background-color: rgba(255,255,255,0.5);
+		}
+		
+		section > h1
+		{
+			color: red;
+			margin-left: 30px;
+		}
+
+		section ul
+		{
+			margin-top: 30px;
+			margin-left: 30px;
+		}
+
+		section ul li
+		{
+			
+			line-height: 30px;
+		}
+		
+		/* Article Styles */
+		article
+		{
+			margin: 20px;
+			line-height: 1.8em;
+		}
+		
+	  </style>
+</head>
+<body>
+	<!-- Logomap definition -->
+      <header>
+         <img src="title.jpg" alt="Page Title" usemap="#logomap" />
+		 <map name="logomap"> 
+			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
+			 <area shape="rect" coords="405,195,585,250" href="desc.html" alt="Description" />	 
+			 <area shape="rect" coords="610,195,775,250" href="res.html" alt="Resources" />
+                         <area shape="rect" coords="795,195,910,250" href="team.html" alt="Resources" />
+		 </map>
+      </header> 
+
+	<!-- Horizontal Navigation List -->
+	  <nav>
+		  <ul>
+			<li><a href="index.html">Abstract</a></li>
+                        <li><a href="desc.html">Description</a></li>
+                        <li><a href="res.html">Resources</a></li>
+                        <li><a href="team.html">Development Team</a></li>	
+		  </ul>
+	  </nav>
+	<!-- Vertical Navigation List -->
+	  <nav id="vertical">
+		  <ol>
+			<li><a href="res.html">Advisors</a></li>
+			<li><a href="book.html">Domain Book</a></li>
+			<li><a href="article.html">Related Articles</a></li>
+			<li><a href="web.html">Related Websites</a></li>
+		  </ol>
+	  </nav>
+	<section>
+		<h1>Advisors</h1>
+		<article>
+                <b>Instructor</b>:<br/>
+                <a href="http://cse.unr.edu/~dascalus" target="new">Sergiu Dascalu, PhD</a><br/>
+                Department of Computer Science and Engineering<br/>
+                University of Nevada, Reno <br/><br/>
+                
+                <b>External Advisor</b>:<br/>
+                <a href="http://nevadadynamics.github.io/about" target="new">MacCallister Higgins</a><br/>
+                Nevada Dynamics, CEO<br/>
+		</article>
+	</section>
+	
+
+</body>
+</html>
