@@ -4,18 +4,14 @@
    <head>
    <!--
       ADS-B Collision Avoid     Team 18 Index Page
-      Date:				4/17/2016  
+      Date:				1/31/2016  
 
       Filename:         index.html
    -->
 
       <meta charset="UTF-8" />
 	  <meta name="description" content="Index page"/>
-	  <meta name="keywords" content="drone, collision, avoidance, collision avoidance, ADS-B, ADS-B signal,
-                     ADS-B collision, ADS-B avoidance, ADS-B collision avoidance, ADS-B drone, drone collision avoidance
-                     CS426, CS426 unr, CS426 UNR, CS426 project, Edwards Dibbs, Dat Luu, Andrew Menard, Nevada Dynamics,
-                     nevada dynamic"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="keywords" content=""/>
           
       <title>ADS-B CAS</title>
       <script src="modernizr-1.5.js"></script>
@@ -30,9 +26,9 @@
          <img src="title.jpg" alt="Page Title" usemap="#logomap" />
 		 <map name="logomap"> 
 			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
-			 <area shape="rect" coords="410,190,595,250" href="hws.html" alt="Description" />	 
-			 <area shape="rect" coords="625,190,750,250" href="desg.html" alt="Resources" />
-                         <area shape="rect" coords="775,190,910,250" href="result.html" alt="Resources" />
+			 <area shape="rect" coords="405,195,585,250" href="desc.html" alt="Description" />	 
+			 <area shape="rect" coords="610,195,775,250" href="res.html" alt="Resources" />
+                         <area shape="rect" coords="795,195,910,250" href="team.html" alt="Resources" />
 		 </map>
       </header> 
 
@@ -50,7 +46,6 @@
       <section>
 		 <br/>
                  <p><font size = 4><b>Welcome to the ADS-B Drone Collision Avoidance System Senior Project Page!!!</b></font></p>
-                 
                  <p>&mdash; <b> Edward, Andrew, Dat </b> &mdash;</p>
 		 <p>
                  <br/>
@@ -64,14 +59,15 @@
                  airspace occurs.
 		 </p>
 		 <br/>
-                 
-		
+         
+		 <br/>
+		 
       </section>
 
       <aside>
          <br/><br/>
          <figure>
-             <a href="puLarge.jpg"><img src="pu.jpg" alt="Program Unit Structure" usemap="" /></a>
+            <a href="puLarge.jpg"><img src="pu.jpg" alt="Program Unit Structure" usemap="" />
 			<figcaption>
 				<br/><br/>
 				Hierarchical Organization of the system's modules
@@ -84,8 +80,6 @@
       <footer>
          <address>
              <p>
-                        <font size = 2><b>Displayed best on PC</b></font>
-                        <br/>
 			This page was last modified on
 			<script>
 				/*

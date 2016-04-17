@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      ADS-B Collision Avoid     Team 18 Description
+      Date:				4/17/2016  
+
+      Filename:         result.html
+   -->
+
+      <meta charset="UTF-8" />
+	  <meta name="description" content="Result page"/>
+	  <meta name="keywords" content=""/>
+          
+      <title>ADS-B CAS</title>
+      <script src="modernizr-1.5.js"></script>
+	  <script src="javascripts.js"></script>
+      <link href="layout.css" rel="stylesheet" type="text/css" />
+          <style type="text/css">
+		/* Section Styles */
+		section
+		{
+                    width: 93%;
+                    border: 1px solid black;
+                    background-color: rgba(255,255,255,0.5);
+		}
+                section p 
+                {
+                    width: 45%;
+                    float: left;
+                    font-size: 1em;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+                
+                section img
+                {
+                    width: 45%;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                    
+                    border: 1px solid red;
+                    -o-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    -webkit-border-radius: 5px;
+		    border-radius: 5px;
+                    float: right;
+                }
+                
+                section > h1
+		{
+			color: red;
+			margin-left: 30px;
+		}
+          </style>
+   </head>
+
+   <body>
+
+	<!-- Logomap definition -->
+      <header>
+         <img src="title.jpg" alt="Page Title" usemap="#logomap" />
+		 <map name="logomap"> 
+			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
+			 <area shape="rect" coords="410,190,595,250" href="hws.html" alt="Description" />	 
+			 <area shape="rect" coords="625,190,750,250" href="desg.html" alt="Resources" />
+                         <area shape="rect" coords="775,190,910,250" href="result.html" alt="Resources" />
+		 </map>
+      </header> 
+
+	<!-- Navigation List -->
+	  <nav>
+	  <ul>
+		<li><a href="index.html">Abstract</a></li>
+		<li><a href="desc.html">Description</a></li>
+		<li><a href="res.html">Resources</a></li>
+		<li><a href="team.html">Development Team</a></li>
+		
+	  </ul>
+	  </nav>
+
+      <section>
+          <h1>Current Progress</h1>
+          <p>
+             
+                 Team 18 successfully implements and tests the design. The figure shows the system's 
+                 Graphical User Interface (GUI) design for testing purpose.
+                 <br/><br/>
+                 The collision is shown on the map as 
+                 intersection between bold red line (aerial object) and bold blue line (drone). 
+                 The GUI reports the current altitude and position of the drone. 
+                 <br/><br/>
+                 When the system 
+                 detected a collision, it will update the GUI display and issue recommended action. 
+                 , the GUI offers zoom in/out function and changing heading of the drone. 
+                 Upon integrating onto drone, the GUI will be eliminated.
+          </p>
+          
+          <img src="gui_1.png" alt="Graphical User Interface design" />
+                 
+      </section>
+      <section>
+          
+          <h1>-- Incoming --: Integrating and Testing on Drone in Real Time</h1>
+         
+         
+          
+      </section>
+
+   </body>
+
+</html>

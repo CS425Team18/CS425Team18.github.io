@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      ADS-B Collision Avoid     Team 18 Description
+      Date:				4/17/2016  
+
+      Filename:         desg.html
+   -->
+
+      <meta charset="UTF-8" />
+	  <meta name="description" content="System Design"/>
+	  <meta name="keywords" content=""/>
+          
+      <title>ADS-B CAS</title>
+      <script src="modernizr-1.5.js"></script>
+	  <script src="javascripts.js"></script>
+      <link href="layout.css" rel="stylesheet" type="text/css" />
+          <style type="text/css">
+		/* Section Styles */
+		section
+		{
+                    width: 93%;
+                    border: 1px solid black;
+                    background-color: rgba(255,255,255,0.5);
+		}
+                section p 
+                {
+                    width: 45%;
+                    float: left;
+                    font-size: 1em;
+                    margin-top: 10px;
+                    margin-left: 15px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+                
+                section figure img
+                {
+                    width: 45%;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                    
+                    border: 1px solid red;
+                    -o-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    -webkit-border-radius: 5px;
+		    border-radius: 5px;
+                    float: right;
+                    clear: right;
+                }
+                
+                section figure figcaption 
+                {
+                    display: block;
+                    width: 100%;
+                    margin-top: 0px;
+                    margin-left: 30px;
+                    line-height: 1em;
+                    text-align: center;
+                    font-style: italic;
+                    font-size: 0.75em;
+                }
+                
+                section > h1
+		{
+			color: red;
+			margin-left: 30px;
+		}
+          </style>
+   </head>
+
+   <body>
+
+	<!-- Logomap definition -->
+      <header>
+         <img src="title.jpg" alt="Page Title" usemap="#logomap" />
+		 <map name="logomap"> 
+			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
+			 <area shape="rect" coords="410,190,595,250" href="hws.html" alt="Description" />	 
+			 <area shape="rect" coords="625,190,750,250" href="desg.html" alt="Resources" />
+                         <area shape="rect" coords="775,190,910,250" href="result.html" alt="Resources" />
+		 </map>
+      </header> 
+
+	<!-- Navigation List -->
+	  <nav>
+	  <ul>
+		<li><a href="index.html">Abstract</a></li>
+		<li><a href="desc.html">Description</a></li>
+		<li><a href="res.html">Resources</a></li>
+		<li><a href="team.html">Development Team</a></li>
+		
+	  </ul>
+	  </nav>
+
+      <section>
+          <h1>System Design</h1>
+           <p>
+             The figure shows high level architectural design of the system.
+             <br/><br/>
+             First, the preprocessing step, the system will receive data from ADS-B 
+             signals using an antenna equipped on drone. The data, directly from 
+             the antenna, will be decoded and imported as a .json file 
+             by an external system (dump1090 data decoder). 
+             <br/><br/>
+             After the preprocessing, the .json file will be analyzed and interpreted 
+             by the inputEngine. Upon successfully confirming the validity of the .json file, 
+             the inputEngine will create a list of Aerial Object data and pass 
+             it to collisionEngine package for further processing. 
+             <br/><br/>
+             The Aerial Object data will be processed by the collisionEngine to determine possible 
+             collision points between the drone and all Aerial Object in the list. 
+             The data of all collision points will be processed by decisionEngine package. 
+             If a collision point is in the dangerous threshold, the decisionEngine 
+             will calculate and issue an optimal path to avoid collision. If the optimal path cannot be found, 
+             the decisionEngine will attempt to stop the drone.
+             <br/><br/>
+             Finally, all calculated and gathered data will be passed to the GUIEngine module 
+             for testing purpose of viewing of collected and processed data.
+          </p>
+          <figure>
+              <a href="puLarge.jpg">
+                  <img src="structural.jpg" alt="Block diagram of architectural design" />
+              </a>
+              <figcaption>Block diagram represents high level architectural design of the system</figcaption>
+          </figure>
+          <br/>
+          
+          
+                 
+      </section>
+
+   </body>
+
+</html>

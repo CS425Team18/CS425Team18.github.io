@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      ADS-B Collision Avoid     Team 18 Description
+      Date:				4/17/2016  
+
+      Filename:         hws.html
+   -->
+
+      <meta charset="UTF-8" />
+	  <meta name="description" content="Hardwares setup page"/>
+	  <meta name="keywords" content=""/>
+          
+      <title>ADS-B CAS</title>
+      <script src="modernizr-1.5.js"></script>
+	  <script src="javascripts.js"></script>
+      <link href="layout.css" rel="stylesheet" type="text/css" />
+          <style type="text/css">
+		/* Section Styles */
+		section
+		{
+                    width: 93%;
+                    border: 1px solid black;
+                    background-color: rgba(255,255,255,0.5);
+                    float: left;
+		}
+                section p 
+                {
+                    width: 45%;
+                    float: left;
+                    font-size: 1em;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+                
+                section img
+                {
+                    width: 45%;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                    
+                    border: 1px solid red;
+                    -o-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    -webkit-border-radius: 5px;
+		    border-radius: 5px;
+                    float: right;
+                }
+                section > h1
+		{
+			color: red;
+			margin-left: 30px;
+		}
+          </style>
+   </head>
+
+   <body>
+
+	<!-- Logomap definition -->
+      <header>
+         <img src="title.jpg" alt="Page Title" usemap="#logomap" />
+		 <map name="logomap"> 
+			 <area shape="rect" coords="0,0,910,175" href="index.html" alt="Abstract" />
+			 <area shape="rect" coords="410,190,595,250" href="hws.html" alt="Description" />	 
+			 <area shape="rect" coords="625,190,750,250" href="desg.html" alt="Resources" />
+                         <area shape="rect" coords="775,190,910,250" href="result.html" alt="Resources" />
+		 </map>
+      </header> 
+
+	<!-- Navigation List -->
+	  <nav>
+	  <ul>
+		<li><a href="index.html">Abstract</a></li>
+		<li><a href="desc.html">Description</a></li>
+		<li><a href="res.html">Resources</a></li>
+		<li><a href="team.html">Development Team</a></li>
+		
+	  </ul>
+	  </nav>
+
+      <section>
+          <p>
+            The main components of the project include: <br/>
+            - 3DR’s smart drone Solo.<br/>
+            - ADS-B Receiver.<br/><br/>
+            The image shows how the components are organized. Specifically, the Solo smart-drone 
+            is equipped with four rotors, various sensors, and an on-board computer 
+            running a Linux installation. The drone is primarily controlled via 3DR’s DroneKit, an API 
+            that allows developers to create applications to monitor and control the drone.<br/><br/> Using the 
+            Solo’s accessory bay, we have attached an ADS-B receiver, which will be processed by the
+            on-board computer using our software. The system will also communicate with Nevada Dynamic’s 
+            ground control to provide the user with useful feedback.
+
+	  </p>
+                 
+                 <img src="sys_setup.png" alt="Hardware system setup"/> 
+         
+		 
+      </section>
+
+   </body>
+
+</html>
